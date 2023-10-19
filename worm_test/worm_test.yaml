@@ -1,0 +1,29 @@
+name: worm
+n_segments: 5
+remenance: 0.0778 #possible to use different values?
+segments:
+- mesh: "worm - mag_part-1.STL"    #0
+  magnetisation_vector: [0, 0, 1]
+  density: 1000 #g/dm^3
+  shear_modulus: 28166 # Not sure about the unit
+  fixed: False
+- mesh: "worm - nonmag_part-1.STL" #1
+  magnetisation_vector: [0, 0, 0]
+  density: 1000
+  shear_modulus: 28166
+  fixed: False
+- mesh: "worm - mag_part-2.STL" #2
+  magnetisation_vector: [0, 0, -1]
+  density: 1000
+  shear_modulus: 28166
+  fixed: False
+- mesh: "worm - nonmag_part-2.STL" #3
+  magnetisation_vector: [0, 0, 0]
+  density: 1000
+  shear_modulus: 28166
+  fixed: False
+- mesh: "worm - mag_part-3.STL" #4
+  magnetisation_vector: [0, 0, 1]
+  density: 1000
+  shear_modulus: 28166
+  fixed: False
