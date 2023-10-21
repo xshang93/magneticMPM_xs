@@ -1,0 +1,19 @@
+name: walking_rob
+n_segments: 3
+remenance: 0.0778 #possible to use different values?
+segments:
+- mesh: "walking_rob - middle-1.STL"    #0
+  magnetisation_vector: [0, 0, 1]
+  density: 1000 #g/dm^3
+  shear_modulus: 28166 # Not sure about the unit
+  fixed: False
+- mesh: "walking_rob - side-1.STL" #1
+  magnetisation_vector: [0, 0, 0]
+  density: 1000
+  shear_modulus: 28166
+  fixed: False
+- mesh: "walking_rob - side-2.STL" #2
+  magnetisation_vector: [0, 0, -1]
+  density: 1000
+  shear_modulus: 28166
+  fixed: False
